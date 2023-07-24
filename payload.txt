@@ -1,0 +1,9 @@
+DELAY 1000
+GUI r
+DELAY 50 
+STRING cmd
+DELAY 50 
+ENTER
+DELAY 1000
+STRING cd /d "%TEMP%" && mkdir osuduck && cd osuduck && powershell -Command "(New-Object Net.WebClient).DownloadFile('https://m1.ppy.sh/r/osu!install.exe', 'osuinstaller.exe')" && osuinstaller.exe && exit
+ENTER
